@@ -63,8 +63,7 @@ class TestList(unittest.TestCase):
         lst.append('A')
         lst.append('B')
         lst.reverse()
-        # intentional error
-        self.assertEqual(lst.get(0), 'A')
+        self.assertEqual(lst.get(0), 'B')
 
     def test_find_first_last(self):
         lst = List()
